@@ -42,8 +42,8 @@ Whether you're analyzing MITRE ATT&CK techniques, exploring network vulnerabilit
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/dustin04x/threat-weaver.git
-   cd threat-weaver
+   git clone https://github.com/dustin04x/ThreatCanvas.git
+   cd ThreatCanvas
    ```
 
 2. Install dependencies:
