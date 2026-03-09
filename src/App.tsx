@@ -14,7 +14,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/ThreatCanvas">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/simulate/:id" element={<SimulationPage />} />

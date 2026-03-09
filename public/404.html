@@ -3,27 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ThreatCanvas</title>
+    <title>Redirecting...</title>
     <script>
-      // Single Page Apps for GitHub Pages
-      // https://github.com/rafgraph/spa-github-pages
-      var segmentCount = 0;
-      var l = window.location;
-      l.replace(
-        l.protocol +
-          '//' +
-          l.hostname +
-          (l.port ? ':' + l.port : '') +
-          '/ThreatCanvas/?p=/' +
-          l.pathname
-            .slice(1)
-            .split('/')
-            .slice(segmentCount)
-            .join('/')
-            .replace(/&/g, '~and~') +
-          (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-          l.hash
-      );
+      // Handle SPA routing on GitHub Pages
+      // Store the path and redirect to root
+      const path = window.location.pathname.replace(/^\/ThreatCanvas/, '');
+      sessionStorage.redirect = path;
+      // Redirect to the root with preserved path
+      window.location.href = '/ThreatCanvas/';
     </script>
   </head>
   <body></body>
