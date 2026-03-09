@@ -1,139 +1,252 @@
-# Threat Weaver
+# 🛡️ ThreatCanvas
 
-> An interactive cybersecurity simulation and learning platform for threat analysis, attack chain visualization, and defensive strategy training.
+> **Visual Malware Attack Simulator** — An interactive cybersecurity education platform for understanding threats, analyzing attacks, and mastering defensive strategies.
 
-## Overview
+<div align="center">
 
-Threat Weaver is a comprehensive cybersecurity education platform designed to help security professionals, students, and enthusiasts understand and respond to cyber threats. The platform combines interactive simulations, attack chain visualization, and hands-on learning modes (Quiz Mode and Defend Mode) to provide an engaging and effective learning experience.
+[![React](https://img.shields.io/badge/React-18.3-61DAFB?style=flat-square&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-Whether you're analyzing MITRE ATT&CK techniques, exploring network vulnerabilities, or developing defensive strategies, Threat Weaver provides the tools and insights you need to master modern cybersecurity concepts.
+[🌐 Live Demo](#) • [📖 Documentation](#) • [🐛 Report Issues](https://github.com/dustin04x/ThreatCanvas/issues) • [💬 Discussions](https://github.com/dustin04x/ThreatCanvas/discussions)
 
-## Features
+</div>
 
-- **Interactive Simulations**: Experience realistic cyber attack scenarios and responses in real-time
-- **Attack Chain Visualization**: Map and trace attack sequences through visual network graphs
-- **MITRE ATT&CK Matrix**: Access comprehensive mapping of attack techniques and tactics
-- **Network Topology Analysis**: Visualize system architecture and process relationships
-- **Timeline View**: Track the progression of attacks with detailed event timelines
-- **Activity Logging**: Monitor and analyze all system activities and security events
-- **Quiz Mode**: Test your knowledge with interactive security challenges
-- **Defend Mode**: Practice defensive strategies against simulated attacks
-- **Process Tree Analysis**: Understand process hierarchies and execution chains
-- **System Map**: Get a high-level overview of infrastructure and systems
+---
 
-## Tech Stack
+## 🎯 What is ThreatCanvas?
 
-- **Frontend Framework**: [React](https://react.dev/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Build Tool**: [Vite](https://vitejs.dev/)
-- **Component Library**: [shadcn/ui](https://ui.shadcn.com/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Testing**: [Vitest](https://vitest.dev/)
-- **Linting**: [ESLint](https://eslint.org/)
+**ThreatCanvas** is a next-generation cybersecurity education platform that brings threat analysis to life. Watch malware attacks unfold in real-time, trace attack chains through visual networks, and practice defensive strategies—all without real malware.
 
-## Getting Started
+Whether you're:
+- 🎓 **A Security Student** learning MITRE ATT&CK frameworks
+- 👨‍💼 **A Security Professional** honing your incident response skills
+- 🔍 **A Threat Hunter** analyzing attack patterns
+- 🛡️ **A Defender** developing protective strategies
+
+ThreatCanvas provides the interactive tools and realistic simulations you need to master modern cybersecurity.
+
+---
+
+## ✨ Core Features
+
+<table>
+  <tr>
+    <td align="center">🎮</td>
+    <td><strong>Interactive Simulations</strong><br/>Experience realistic cyber attack scenarios unfolding in real-time</td>
+  </tr>
+  <tr>
+    <td align="center">🔗</td>
+    <td><strong>Attack Chain Visualization</strong><br/>Map and trace attack sequences through interactive network graphs</td>
+  </tr>
+  <tr>
+    <td align="center">📊</td>
+    <td><strong>MITRE ATT&CK Matrix</strong><br/>Understand attack techniques and tactics with comprehensive framework mapping</td>
+  </tr>
+  <tr>
+    <td align="center">🌐</td>
+    <td><strong>Network Topology</strong><br/>Visualize system architecture and process relationships</td>
+  </tr>
+  <tr>
+    <td align="center">📈</td>
+    <td><strong>Timeline Analysis</strong><br/>Track attack progression with detailed event timelines</td>
+  </tr>
+  <tr>
+    <td align="center">📝</td>
+    <td><strong>Activity Logging</strong><br/>Monitor and analyze all system activities and security events</td>
+  </tr>
+  <tr>
+    <td align="center">🧠</td>
+    <td><strong>Quiz Mode</strong><br/>Test your knowledge with interactive security challenges</td>
+  </tr>
+  <tr>
+    <td align="center">⚔️</td>
+    <td><strong>Defend Mode</strong><br/>Practice defensive strategies against simulated attacks</td>
+  </tr>
+  <tr>
+    <td align="center">🌳</td>
+    <td><strong>Process Tree Analysis</strong><br/>Understand process hierarchies and execution chains</td>
+  </tr>
+  <tr>
+    <td align="center">🗺️</td>
+    <td><strong>System Map</strong><br/>Get a high-level overview of infrastructure and systems</td>
+  </tr>
+</table>
+
+---
+
+## 🛠️ Technology Stack
+
+Built with cutting-edge web technologies:
+
+| Category | Technology |
+|----------|-----------|
+| 🎨 **Frontend Framework** | [React 18.3](https://react.dev/) |
+| 🔷 **Language** | [TypeScript 5.8](https://www.typescriptlang.org/) |
+| ⚡ **Build Tool** | [Vite 5.4](https://vitejs.dev/) |
+| 🎭 **UI Components** | [shadcn/ui](https://ui.shadcn.com/) + [Radix UI](https://www.radix-ui.com/) |
+| 🎨 **Styling** | [Tailwind CSS 3.4](https://tailwindcss.com/) |
+| 🧪 **Testing** | [Vitest 3.2](https://vitest.dev/) |
+| 📋 **Code Quality** | [ESLint 9.32](https://eslint.org/) |
+| 🎬 **Animations** | [Framer Motion 12.35](https://www.framer.com/motion/) |
+| 📦 **State Management** | [Zustand 4.5](https://github.com/pmndrs/zustand) |
+| 📊 **Charts** | [Recharts 2.15](https://recharts.org/) |
+
+---
+
+## 🚀 Quick Start
 
 ### Prerequisites
 
-- Node.js (v18 or higher recommended)
-- npm, yarn, or bun as your package manager
+Before you begin, ensure you have:
+- **Node.js** v18 or higher ([Download](https://nodejs.org/))
+- **npm**, **yarn**, or **bun** as your package manager
 
 ### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/dustin04x/ThreatCanvas.git
-   cd ThreatCanvas
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   bun install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open your browser and navigate to `http://localhost:5173` (or the URL displayed in your terminal)
-
-## Development
-
-### Available Scripts
-
 ```bash
-# Start development server with hot reload
+# 1️⃣ Clone the repository
+git clone https://github.com/dustin04x/ThreatCanvas.git
+cd ThreatCanvas
+
+# 2️⃣ Install dependencies
+npm install
+# or: yarn install | bun install
+
+# 3️⃣ Start the development server
 npm run dev
 
-# Build for production
-npm run build
-
-# Build in development mode
-npm run build:dev
-
-# Preview production build locally
-npm run preview
-
-# Run tests once
-npm run test
-
-# Run tests in watch mode
-npm run test:watch
-
-# Lint code
-npm run lint
+# 4️⃣ Open in your browser
+# Visit http://localhost:5173 (or the URL shown in your terminal)
 ```
 
-### Project Structure
+---
+
+## 📚 Development Guide
+
+### Available Commands
+
+```bash
+npm run dev          # Start development server with hot reload
+npm run build        # Build for production
+npm run build:dev    # Build in development mode
+npm run preview      # Preview production build locally
+npm run test         # Run tests once
+npm run test:watch   # Run tests in watch mode (continuous)
+npm run lint         # Check code quality with ESLint
+```
+
+### Project Architecture
 
 ```
-src/
-├── components/         # Reusable React components
-│   ├── simulation/     # Simulation-specific components
-│   └── ui/            # Base UI components (shadcn/ui)
-├── pages/             # Page components
-├── hooks/             # Custom React hooks
-├── lib/               # Utilities and helpers
-├── store/             # Application state management
-├── test/              # Test files
-├── App.tsx            # Root application component
-├── main.tsx           # Application entry point
-└── index.css          # Global styles
+ThreatCanvas/
+├── src/
+│   ├── components/
+│   │   ├── simulation/      # 🎮 Simulation-specific components
+│   │   │   ├── AttackChain.tsx
+│   │   │   ├── NetworkGraph.tsx
+│   │   │   ├── ProcessTree.tsx
+│   │   │   ├── Timeline.tsx
+│   │   │   ├── MitreMatrix.tsx
+│   │   │   ├── QuizMode.tsx
+│   │   │   ├── DefendMode.tsx
+│   │   │   └── ...
+│   │   └── ui/              # 🎨 Base UI components (shadcn)
+│   ├── pages/               # 📄 Page components
+│   ├── hooks/               # 🪝 Custom React hooks
+│   ├── lib/                 # 🔧 Utilities and helpers
+│   ├── store/               # 💾 State management (Zustand)
+│   ├── App.tsx              # 🏠 Root component
+│   ├── main.tsx             # ⚙️ Entry point
+│   └── index.css            # 🎨 Global styles
+├── public/                  # 📁 Static assets
+├── package.json             # 📦 Dependencies
+├── vite.config.ts           # ⚡ Vite configuration
+├── tsconfig.json            # 🔷 TypeScript configuration
+└── README.md                # 📖 You are here!
 ```
 
-## Usage
+---
 
-1. **Launch the Application**: Access the platform through the web interface
-2. **Select a Simulation**: Choose from available cybersecurity scenarios
-3. **Learn & Analyze**: Use the various visualization tools to understand attack mechanics
-4. **Test Your Knowledge**: Participate in Quiz Mode to assess your learning
-5. **Practice Defense**: Use Defend Mode to develop and refine your defensive strategies
+## 💡 How to Use ThreatCanvas
 
-## Contributing
+1. **🚀 Launch** — Open the application in your browser
+2. **📂 Select Scenario** — Choose from available cybersecurity simulations
+3. **🔍 Analyze** — Use visualization tools to understand attack mechanics
+4. **📊 Learn** — Study attack techniques and defensive responses
+5. **🧠 Test** — Participate in Quiz Mode to assess your knowledge
+6. **⚔️ Practice** — Use Defend Mode to develop defensive strategies
 
-We welcome contributions to Threat Weaver! To get started:
+---
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## 🤝 Contributing
 
-Please ensure your code follows our linting standards by running `npm run lint` before submitting a PR.
+We love contributions! Here's how you can help:
 
-## License
+### Fork & Create a Branch
+```bash
+git checkout -b feature/YourAmazingFeature
+```
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Make Your Changes
+- Follow the existing code style
+- Write clear commit messages
+- Test your changes thoroughly
 
-## Support
+### Submit a Pull Request
+```bash
+git commit -m "Add: Your amazing feature"
+git push origin feature/YourAmazingFeature
+```
 
-For questions, issues, or suggestions, please open an issue on the [GitHub repository](https://github.com/dustin04x/threat-weaver/issues).
+Then open a PR on GitHub. We'll review it as soon as possible!
 
-## Acknowledgments
+### Before Submitting
+Please ensure your code passes our quality checks:
+```bash
+npm run lint    # Check code style
+npm run test    # Run tests
+npm run build   # Verify it builds
+```
 
-- Built with modern web technologies and best practices
-- Inspired by the need for practical, interactive cybersecurity education
-- Community-driven development and continuous improvement
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+This means you can use ThreatCanvas for educational, commercial, and private purposes!
+
+---
+
+## 🆘 Support & Community
+
+### Have Questions?
+- 📖 Check the [Documentation](#)
+- 🐛 [Report Issues](https://github.com/dustin04x/ThreatCanvas/issues)
+- 💬 [Join Discussions](https://github.com/dustin04x/ThreatCanvas/discussions)
+
+### Stay Updated
+⭐ **Star this repository** to stay updated with latest releases and improvements!
+
+---
+
+## 🙏 Acknowledgments
+
+- 🎨 Built with modern, cutting-edge web technologies
+- 💡 Inspired by the urgent need for practical, interactive cybersecurity education
+- 🌍 Driven by a passionate community dedicated to improving security awareness
+- 🔬 Powered by real-world cybersecurity principles and best practices
+
+---
+
+<div align="center">
+
+### Made with ❤️ by the ThreatCanvas Community
+
+**[⭐ Star us on GitHub](https://github.com/dustin04x/ThreatCanvas)** if you find ThreatCanvas useful!
+
+[Report Bug](https://github.com/dustin04x/ThreatCanvas/issues/new?labels=bug) • [Request Feature](https://github.com/dustin04x/ThreatCanvas/issues/new?labels=enhancement) • [View Issues](https://github.com/dustin04x/ThreatCanvas/issues)
+
+</div>
