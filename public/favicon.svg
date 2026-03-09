@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield with threat indicator -->
+  <path d="M16 2L5 5.5V13C5 21 16 28 16 28C16 28 27 21 27 13V5.5L16 2Z" fill="black" opacity="0.9"/>
+  
+  <!-- Threat target circles -->
+  <circle cx="16" cy="15" r="7" fill="none" stroke="white" stroke-width="1"/>
+  <circle cx="16" cy="15" r="5" fill="none" stroke="white" stroke-width="0.8"/>
+  <circle cx="16" cy="15" r="2" fill="white"/>
+  
+  <!-- Crosshair lines -->
+  <line x1="16" y1="8" x2="16" y2="10" stroke="white" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="16" y1="20" x2="16" y2="22" stroke="white" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="10" y1="15" x2="12" y2="15" stroke="white" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="20" y1="15" x2="22" y2="15" stroke="white" stroke-width="0.8" stroke-linecap="round"/>
+</svg>
